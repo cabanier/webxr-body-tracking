@@ -7,7 +7,7 @@
   <link href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD" rel="stylesheet">
   <meta content="Bikeshed version 82ce88815, updated Thu Sep 7 16:33:55 2023 -0700" name="generator">
   <link href="https://www.w3.org/TR/webxr-body-tracking-1/" rel="canonical">
-  <meta content="d1dd32cd376cd8f26dd3769922467c290ab74f49" name="document-revision">
+  <meta content="165b8eb9699aa5502cb29ed19e54fd9b1246adc2" name="document-revision">
   <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
   <link href="favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
 <style>
@@ -724,7 +724,7 @@ var.selected6 { background-color: #FFBCF2; box-shadow: 0 0 0 2px #FFBCF2; }
   <div class="head">
    <p data-fill-with="logo"><a class="logo" href="https://www.w3.org/"> <img alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72"> </a> </p>
    <h1 class="p-name no-ref" id="title">WebXR Body Tracking Module - Level 1</h1>
-   <p id="w3c-state"><a href="https://www.w3.org/standards/types#UD">Unofficial Proposal Draft</a>, <time class="dt-updated" datetime="2024-01-23">23 January 2024</time></p>
+   <p id="w3c-state"><a href="https://www.w3.org/standards/types#UD">Unofficial Proposal Draft</a>, <time class="dt-updated" datetime="2024-04-29">29 April 2024</time></p>
    <details open>
     <summary>More details about this document</summary>
     <div data-fill-with="spec-metadata">
@@ -836,57 +836,57 @@ by this module as a new valid <a data-link-type="dfn" href="https://immersive-we
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-arm-upper"><code><c- s>"right-arm-upper"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-arm-upper"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-arm-lower"><code><c- s>"right-arm-lower"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-arm-lower"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-wrist-twist"><code><c- s>"right-hand-wrist-twist"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-wrist-twist"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-palm"><code><c- s>"left-hand-palm"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-palm"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-wrist"><code><c- s>"left-hand-wrist"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-wrist"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-thumb-carpal"><code><c- s>"left-hand-thumb-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-thumb-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-thumb-proximal"><code><c- s>"left-hand-thumb-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-thumb-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-thumb-distal"><code><c- s>"left-hand-thumb-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-thumb-distal"></a></dfn>,
+  <dfn class="dfn-paneled idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-palm"><code><c- s>"left-hand-palm"</c-></code></dfn>,
+  <dfn class="dfn-paneled idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-wrist"><code><c- s>"left-hand-wrist"</c-></code></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-thumb-metacarpal"><code><c- s>"left-hand-thumb-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-thumb-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-thumb-phalanx-proximal"><code><c- s>"left-hand-thumb-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-thumb-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-thumb-phalanx-distal"><code><c- s>"left-hand-thumb-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-thumb-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-thumb-tip"><code><c- s>"left-hand-thumb-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-thumb-tip"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-index-carpal"><code><c- s>"left-hand-index-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-index-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-index-proximal"><code><c- s>"left-hand-index-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-index-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-index-intermediate"><code><c- s>"left-hand-index-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-index-intermediate"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-index-distal"><code><c- s>"left-hand-index-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-index-distal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-index-metacarpal"><code><c- s>"left-hand-index-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-index-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-index-phalanx-proximal"><code><c- s>"left-hand-index-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-index-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-index-phalanx-intermediate"><code><c- s>"left-hand-index-phalanx-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-index-phalanx-intermediate"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-index-phalanx-distal"><code><c- s>"left-hand-index-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-index-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-index-tip"><code><c- s>"left-hand-index-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-index-tip"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-middle-carpal"><code><c- s>"left-hand-middle-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-middle-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-middle-proximal"><code><c- s>"left-hand-middle-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-middle-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-middle-intermediate"><code><c- s>"left-hand-middle-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-middle-intermediate"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-middle-distal"><code><c- s>"left-hand-middle-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-middle-distal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-middle-phalanx-metacarpal"><code><c- s>"left-hand-middle-phalanx-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-middle-phalanx-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-middle-phalanx-proximal"><code><c- s>"left-hand-middle-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-middle-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-middle-phalanx-intermediate"><code><c- s>"left-hand-middle-phalanx-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-middle-phalanx-intermediate"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-middle-phalanx-distal"><code><c- s>"left-hand-middle-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-middle-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-middle-tip"><code><c- s>"left-hand-middle-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-middle-tip"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-ring-carpal"><code><c- s>"left-hand-ring-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-ring-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-ring-proximal"><code><c- s>"left-hand-ring-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-ring-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-ring-intermediate"><code><c- s>"left-hand-ring-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-ring-intermediate"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-ring-distal"><code><c- s>"left-hand-ring-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-ring-distal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-ring-metacarpal"><code><c- s>"left-hand-ring-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-ring-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-ring-phalanx-proximal"><code><c- s>"left-hand-ring-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-ring-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-ring-phalanx-intermediate"><code><c- s>"left-hand-ring-phalanx-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-ring-phalanx-intermediate"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-ring-phalanx-distal"><code><c- s>"left-hand-ring-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-ring-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-ring-tip"><code><c- s>"left-hand-ring-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-ring-tip"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-little-carpal"><code><c- s>"left-hand-little-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-little-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-little-proximal"><code><c- s>"left-hand-little-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-little-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-little-intermediate"><code><c- s>"left-hand-little-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-little-intermediate"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-little-distal"><code><c- s>"left-hand-little-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-little-distal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-little-metacarpal"><code><c- s>"left-hand-little-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-little-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-little-phalanx-proximal"><code><c- s>"left-hand-little-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-little-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-little-phalanx-intermediate"><code><c- s>"left-hand-little-phalanx-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-little-phalanx-intermediate"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-little-phalanx-distal"><code><c- s>"left-hand-little-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-little-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-hand-little-tip"><code><c- s>"left-hand-little-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-hand-little-tip"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-palm"><code><c- s>"right-hand-palm"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-palm"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-wrist"><code><c- s>"right-hand-wrist"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-wrist"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-thumb-carpal"><code><c- s>"right-hand-thumb-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-thumb-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-thumb-proximal"><code><c- s>"right-hand-thumb-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-thumb-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-thumb-distal"><code><c- s>"right-hand-thumb-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-thumb-distal"></a></dfn>,
+  <dfn class="dfn-paneled idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-palm"><code><c- s>"right-hand-palm"</c-></code></dfn>,
+  <dfn class="dfn-paneled idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-wrist"><code><c- s>"right-hand-wrist"</c-></code></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-thumb-metacarpal"><code><c- s>"right-hand-thumb-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-thumb-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-thumb-phalanx-proximal"><code><c- s>"right-hand-thumb-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-thumb-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-thumb-phalanx-distal"><code><c- s>"right-hand-thumb-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-thumb-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-thumb-tip"><code><c- s>"right-hand-thumb-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-thumb-tip"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-index-carpal"><code><c- s>"right-hand-index-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-index-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-index-proximal"><code><c- s>"right-hand-index-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-index-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-index-intermediate"><code><c- s>"right-hand-index-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-index-intermediate"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-index-distal"><code><c- s>"right-hand-index-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-index-distal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-index-metacarpal"><code><c- s>"right-hand-index-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-index-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-index-phalanx-proximal"><code><c- s>"right-hand-index-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-index-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-index-phalanx-intermediate"><code><c- s>"right-hand-index-phalanx-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-index-phalanx-intermediate"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-index-phalanx-distal"><code><c- s>"right-hand-index-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-index-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-index-tip"><code><c- s>"right-hand-index-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-index-tip"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-middle-carpal"><code><c- s>"right-hand-middle-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-middle-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-middle-proximal"><code><c- s>"right-hand-middle-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-middle-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-middle-intermediate"><code><c- s>"right-hand-middle-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-middle-intermediate"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-middle-distal"><code><c- s>"right-hand-middle-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-middle-distal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-middle-metacarpal"><code><c- s>"right-hand-middle-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-middle-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-middle-phalanx-proximal"><code><c- s>"right-hand-middle-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-middle-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-middle-phalanx-intermediate"><code><c- s>"right-hand-middle-phalanx-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-middle-phalanx-intermediate"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-middle-phalanx-distal"><code><c- s>"right-hand-middle-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-middle-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-middle-tip"><code><c- s>"right-hand-middle-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-middle-tip"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-ring-carpal"><code><c- s>"right-hand-ring-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-ring-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-ring-proximal"><code><c- s>"right-hand-ring-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-ring-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-ring-intermediate"><code><c- s>"right-hand-ring-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-ring-intermediate"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-ring-distal"><code><c- s>"right-hand-ring-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-ring-distal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-ring-metacarpal"><code><c- s>"right-hand-ring-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-ring-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-ring-phalanx-proximal"><code><c- s>"right-hand-ring-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-ring-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-ring-phalanx-intermediate"><code><c- s>"right-hand-ring-phalanx-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-ring-phalanx-intermediate"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-ring-phalanx-distal"><code><c- s>"right-hand-ring-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-ring-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-ring-tip"><code><c- s>"right-hand-ring-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-ring-tip"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-little-carpal"><code><c- s>"right-hand-little-carpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-little-carpal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-little-proximal"><code><c- s>"right-hand-little-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-little-proximal"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-little-intermediate"><code><c- s>"right-hand-little-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-little-intermediate"></a></dfn>,
-  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-little-distal"><code><c- s>"right-hand-little-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-little-distal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-little-metacarpal"><code><c- s>"right-hand-little-metacarpal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-little-metacarpal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-little-phalanx-proximal"><code><c- s>"right-hand-little-phalanx-proximal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-little-phalanx-proximal"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-little-phalanx-intermediate"><code><c- s>"right-hand-little-phalanx-intermediate"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-little-phalanx-intermediate"></a></dfn>,
+  <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-little-phalanx-distal"><code><c- s>"right-hand-little-phalanx-distal"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-little-phalanx-distal"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-right-hand-little-tip"><code><c- s>"right-hand-little-tip"</c-></code><a class="self-link" href="#dom-xrbodyjoint-right-hand-little-tip"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-upper-leg"><code><c- s>"left-upper-leg"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-upper-leg"></a></dfn>,
   <dfn class="idl-code" data-dfn-for="XRBodyJoint" data-dfn-type="enum-value" data-export id="dom-xrbodyjoint-left-lower-leg"><code><c- s>"left-lower-leg"</c-></code><a class="self-link" href="#dom-xrbodyjoint-left-lower-leg"></a></dfn>,
@@ -923,7 +923,7 @@ by this module as a new valid <a data-link-type="dfn" href="https://immersive-we
     the <code class="idl"><a data-link-type="idl" href="#enumdef-xrbodyjoint" id="ref-for-enumdef-xrbodyjoint⑥">XRBodyJoint</a></code> and the value being the <code class="idl"><a data-link-type="idl" href="#xrbodyspace" id="ref-for-xrbodyspace③">XRBodySpace</a></code> corresponding to that <code class="idl"><a data-link-type="idl" href="#enumdef-xrbodyjoint" id="ref-for-enumdef-xrbodyjoint⑦">XRBodyJoint</a></code>, ordered by <code class="idl"><a data-link-type="idl" href="#enumdef-xrbodyjoint" id="ref-for-enumdef-xrbodyjoint⑧">list of joints</a></code>}
     under <a data-link-type="dfn" href="#body-joints" id="ref-for-body-joints⑤">body joints</a>. </div>
    <p>If an individual device does not support a joint defined in this specification, it MUST emulate it instead.</p>
-   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRBody" data-dfn-type="attribute" data-export id="dom-xrbody-size"><code>size</code></dfn> attribute MUST return the number <code>25</code>.</p>
+   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRBody" data-dfn-type="attribute" data-export id="dom-xrbody-size"><code>size</code></dfn> attribute MUST return the number <code>84</code>.</p>
    <div class="algorithm" data-algorithm="index-joint-space">
      The <dfn class="idl-code" data-dfn-for="XRBody" data-dfn-type="method" data-export id="dom-xrbody-get-jointname"><code>get(<var>jointName</var>)</code><a class="self-link" href="#dom-xrbody-get-jointname"></a></dfn> method when invoked on an <code class="idl"><a data-link-type="idl" href="#xrbody" id="ref-for-xrbody⑤">XRBody</a></code> <a data-link-type="dfn" href="https://webidl.spec.whatwg.org/#this" id="ref-for-this①">this</a> MUST run the following steps: 
     <ol>
@@ -943,10 +943,12 @@ by this module as a new valid <a data-link-type="dfn" href="https://immersive-we
    <p>The <a data-link-type="dfn" href="https://immersive-web.github.io/webxr/#xrspace-native-origin" id="ref-for-xrspace-native-origin①">native origin</a> of the <code class="idl"><a data-link-type="idl" href="#xrbodyspace" id="ref-for-xrbodyspace⑤">XRBodySpace</a></code> may only be reported when <a data-link-type="dfn" href="https://immersive-web.github.io/webxr/#xrspace-native-origin" id="ref-for-xrspace-native-origin②">native origins</a> of all other <code class="idl"><a data-link-type="idl" href="#xrbodyspace" id="ref-for-xrbodyspace⑥">XRBodySpace</a></code>s on the same <a data-link-type="dfn" href="#xrbodyspace-body" id="ref-for-xrbodyspace-body">body</a> are being reported. When a body is partially obscured the user agent MUST either emulate the obscured joints, or report null poses for all of the joints.</p>
    <p class="note" role="note"><span class="marker">Note:</span> This means that when fetching poses you will either get an entire body or none of it.</p>
    <p>The <a data-link-type="dfn" href="https://immersive-web.github.io/webxr/#xrspace-native-origin" id="ref-for-xrspace-native-origin③">native origin</a> has its <code>-Y</code> direction pointing perpendicular to the skin, outwards from the palm, and <code>-Z</code> direction pointing along their associated bone, away from the wrist.</p>
-   <p>For tip <a data-link-type="dfn" href="#body-joints" id="ref-for-body-joints⑥">body joints</a> where there is no <a data-link-type="dfn" href="#associated-bone" id="ref-for-associated-bone②">associated bone</a>, the <code>-Z</code> direction is the same as that for the associated distal joint, i.e. the direction is along that of the previous bone. For wrist <a data-link-type="dfn" href="#body-joints" id="ref-for-body-joints⑦">body joints</a> the <code>-Z</code> direction SHOULD point roughly towards the center of the palm.</p>
+   <p>For tip <a data-link-type="dfn" href="#body-joints" id="ref-for-body-joints⑥">body joints</a> where there is no <a data-link-type="dfn" href="#associated-bone" id="ref-for-associated-bone②">associated bone</a>, the <code>-Z</code> direction is the same as that for the associated distal joint, i.e. the direction is along that of the previous bone.</p>
+   <p>The <code class="idl"><a data-link-type="idl" href="#dom-xrbodyjoint-left-hand-wrist" id="ref-for-dom-xrbodyjoint-left-hand-wrist">left-hand-wrist</a></code> and <code class="idl"><a data-link-type="idl" href="#dom-xrbodyjoint-right-hand-wrist" id="ref-for-dom-xrbodyjoint-right-hand-wrist">right-hand-wrist</a></code> <a data-link-type="dfn" href="#body-joints" id="ref-for-body-joints⑦">body joints</a> are located at the pivot point of the wrist, which is location invariant when twisting the hand without moving the forearm. The backward (+Z) direction is parallel to the line from wrist joint to middle finger metacarpal joint, and points away from the finger tips. The up (+Y) direction points out towards back of the hand and perpendicular to the skin at wrist. The X direction is perpendicular to the Y and Z directions and follows the right hand rule.</p>
+   <p>The <code class="idl"><a data-link-type="idl" href="#dom-xrbodyjoint-left-hand-palm" id="ref-for-dom-xrbodyjoint-left-hand-palm">left-hand-palm</a></code> and <code class="idl"><a data-link-type="idl" href="#dom-xrbodyjoint-right-hand-palm" id="ref-for-dom-xrbodyjoint-right-hand-palm">right-hand-palm</a></code> <a data-link-type="dfn" href="#body-joints" id="ref-for-body-joints⑧">body joints</a> are located at the center of the middle finger’s metacarpal bone. The backward (+Z) direction is parallel to the middle finger’s metacarpal bone, and points away from the finger tips. The up (+Y) direction is perpendicular to palm surface and pointing towards the back of the hand. The X direction is perpendicular to the Y and Z directions and follows the right hand rule.</p>
    <p>Every <code class="idl"><a data-link-type="idl" href="#xrbodyspace" id="ref-for-xrbodyspace⑦">XRBodySpace</a></code> has an associated <dfn class="dfn-paneled" data-dfn-for="XRBodySpace" data-dfn-type="dfn" data-noexport id="xrbodyspace-body">body</dfn>, which is the <code class="idl"><a data-link-type="idl" href="#xrbody" id="ref-for-xrbody⑥">XRBody</a></code> that created it.</p>
    <p><dfn class="dfn-paneled" data-dfn-for="XRBodySpace" data-dfn-type="dfn" data-noexport id="xrbodyspace-jointname">jointName</dfn> returns the joint name of the joint it tracks.</p>
-   <p>Every <code class="idl"><a data-link-type="idl" href="#xrbodyspace" id="ref-for-xrbodyspace⑧">XRBodySpace</a></code> has an associated <dfn class="dfn-paneled" data-dfn-for="XRBodySpace" data-dfn-type="dfn" data-noexport id="xrbodyspace-joint">joint</dfn>, which is the <a data-link-type="dfn" href="#body-joints" id="ref-for-body-joints⑧">body joint</a> corresponding to the <a data-link-type="dfn" href="#xrbodyspace-jointname" id="ref-for-xrbodyspace-jointname">jointName</a>.</p>
+   <p>Every <code class="idl"><a data-link-type="idl" href="#xrbodyspace" id="ref-for-xrbodyspace⑧">XRBodySpace</a></code> has an associated <dfn class="dfn-paneled" data-dfn-for="XRBodySpace" data-dfn-type="dfn" data-noexport id="xrbodyspace-joint">joint</dfn>, which is the <a data-link-type="dfn" href="#body-joints" id="ref-for-body-joints⑨">body joint</a> corresponding to the <a data-link-type="dfn" href="#xrbodyspace-jointname" id="ref-for-xrbodyspace-jointname">jointName</a>.</p>
    <h2 class="heading settled" data-level="3" id="privacy-security"><span class="secno">3. </span><span class="content">Privacy &amp; Security Considerations</span><a class="self-link" href="#privacy-security"></a></h2>
     The WebXR Body Tracking API is a powerful feature that carries significant privacy risks. 
    <p>Since this feature MAY return new sensor data, the User Agent MUST ask for <a data-link-type="dfn" href="https://immersive-web.github.io/webxr/#explicit-consent" id="ref-for-explicit-consent">explicit consent</a> from the user at session creation time.</p>
@@ -1038,30 +1040,30 @@ before revealing it through the WebXR Body Tracking API.</p>
    <li><a href="#dom-xrbodyjoint-left-foot-ball">"left-foot-ball"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-foot-subtalar">"left-foot-subtalar"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-foot-transverse">"left-foot-transverse"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-index-carpal">"left-hand-index-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-index-distal">"left-hand-index-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-index-intermediate">"left-hand-index-intermediate"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-index-proximal">"left-hand-index-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-index-metacarpal">"left-hand-index-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-index-phalanx-distal">"left-hand-index-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-index-phalanx-intermediate">"left-hand-index-phalanx-intermediate"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-index-phalanx-proximal">"left-hand-index-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-hand-index-tip">"left-hand-index-tip"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-little-carpal">"left-hand-little-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-little-distal">"left-hand-little-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-little-intermediate">"left-hand-little-intermediate"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-little-proximal">"left-hand-little-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-little-metacarpal">"left-hand-little-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-little-phalanx-distal">"left-hand-little-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-little-phalanx-intermediate">"left-hand-little-phalanx-intermediate"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-little-phalanx-proximal">"left-hand-little-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-hand-little-tip">"left-hand-little-tip"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-middle-carpal">"left-hand-middle-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-middle-distal">"left-hand-middle-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-middle-intermediate">"left-hand-middle-intermediate"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-middle-proximal">"left-hand-middle-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-middle-phalanx-distal">"left-hand-middle-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-middle-phalanx-intermediate">"left-hand-middle-phalanx-intermediate"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-middle-phalanx-metacarpal">"left-hand-middle-phalanx-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-middle-phalanx-proximal">"left-hand-middle-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-hand-middle-tip">"left-hand-middle-tip"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-hand-palm">"left-hand-palm"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-ring-carpal">"left-hand-ring-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-ring-distal">"left-hand-ring-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-ring-intermediate">"left-hand-ring-intermediate"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-ring-proximal">"left-hand-ring-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-ring-metacarpal">"left-hand-ring-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-ring-phalanx-distal">"left-hand-ring-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-ring-phalanx-intermediate">"left-hand-ring-phalanx-intermediate"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-ring-phalanx-proximal">"left-hand-ring-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-hand-ring-tip">"left-hand-ring-tip"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-thumb-carpal">"left-hand-thumb-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-thumb-distal">"left-hand-thumb-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-left-hand-thumb-proximal">"left-hand-thumb-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-thumb-metacarpal">"left-hand-thumb-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-thumb-phalanx-distal">"left-hand-thumb-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-left-hand-thumb-phalanx-proximal">"left-hand-thumb-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-hand-thumb-tip">"left-hand-thumb-tip"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-hand-wrist">"left-hand-wrist"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-left-hand-wrist-twist">"left-hand-wrist-twist"</a><span>, in § 2.3</span>
@@ -1077,30 +1079,30 @@ before revealing it through the WebXR Body Tracking API.</p>
    <li><a href="#dom-xrbodyjoint-right-foot-ball">"right-foot-ball"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-foot-subtalar">"right-foot-subtalar"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-foot-transverse">"right-foot-transverse"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-index-carpal">"right-hand-index-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-index-distal">"right-hand-index-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-index-intermediate">"right-hand-index-intermediate"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-index-proximal">"right-hand-index-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-index-metacarpal">"right-hand-index-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-index-phalanx-distal">"right-hand-index-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-index-phalanx-intermediate">"right-hand-index-phalanx-intermediate"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-index-phalanx-proximal">"right-hand-index-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-hand-index-tip">"right-hand-index-tip"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-little-carpal">"right-hand-little-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-little-distal">"right-hand-little-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-little-intermediate">"right-hand-little-intermediate"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-little-proximal">"right-hand-little-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-little-metacarpal">"right-hand-little-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-little-phalanx-distal">"right-hand-little-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-little-phalanx-intermediate">"right-hand-little-phalanx-intermediate"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-little-phalanx-proximal">"right-hand-little-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-hand-little-tip">"right-hand-little-tip"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-middle-carpal">"right-hand-middle-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-middle-distal">"right-hand-middle-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-middle-intermediate">"right-hand-middle-intermediate"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-middle-proximal">"right-hand-middle-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-middle-metacarpal">"right-hand-middle-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-middle-phalanx-distal">"right-hand-middle-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-middle-phalanx-intermediate">"right-hand-middle-phalanx-intermediate"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-middle-phalanx-proximal">"right-hand-middle-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-hand-middle-tip">"right-hand-middle-tip"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-hand-palm">"right-hand-palm"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-ring-carpal">"right-hand-ring-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-ring-distal">"right-hand-ring-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-ring-intermediate">"right-hand-ring-intermediate"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-ring-proximal">"right-hand-ring-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-ring-metacarpal">"right-hand-ring-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-ring-phalanx-distal">"right-hand-ring-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-ring-phalanx-intermediate">"right-hand-ring-phalanx-intermediate"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-ring-phalanx-proximal">"right-hand-ring-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-hand-ring-tip">"right-hand-ring-tip"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-thumb-carpal">"right-hand-thumb-carpal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-thumb-distal">"right-hand-thumb-distal"</a><span>, in § 2.3</span>
-   <li><a href="#dom-xrbodyjoint-right-hand-thumb-proximal">"right-hand-thumb-proximal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-thumb-metacarpal">"right-hand-thumb-metacarpal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-thumb-phalanx-distal">"right-hand-thumb-phalanx-distal"</a><span>, in § 2.3</span>
+   <li><a href="#dom-xrbodyjoint-right-hand-thumb-phalanx-proximal">"right-hand-thumb-phalanx-proximal"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-hand-thumb-tip">"right-hand-thumb-tip"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-hand-wrist">"right-hand-wrist"</a><span>, in § 2.3</span>
    <li><a href="#dom-xrbodyjoint-right-hand-wrist-twist">"right-hand-wrist-twist"</a><span>, in § 2.3</span>
@@ -1204,55 +1206,55 @@ before revealing it through the WebXR Body Tracking API.</p>
   <a href="#dom-xrbodyjoint-right-hand-wrist-twist"><code><c- s>"right-hand-wrist-twist"</c-></code></a>,
   <a href="#dom-xrbodyjoint-left-hand-palm"><code><c- s>"left-hand-palm"</c-></code></a>,
   <a href="#dom-xrbodyjoint-left-hand-wrist"><code><c- s>"left-hand-wrist"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-thumb-carpal"><code><c- s>"left-hand-thumb-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-thumb-proximal"><code><c- s>"left-hand-thumb-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-thumb-distal"><code><c- s>"left-hand-thumb-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-thumb-metacarpal"><code><c- s>"left-hand-thumb-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-thumb-phalanx-proximal"><code><c- s>"left-hand-thumb-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-thumb-phalanx-distal"><code><c- s>"left-hand-thumb-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-left-hand-thumb-tip"><code><c- s>"left-hand-thumb-tip"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-index-carpal"><code><c- s>"left-hand-index-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-index-proximal"><code><c- s>"left-hand-index-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-index-intermediate"><code><c- s>"left-hand-index-intermediate"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-index-distal"><code><c- s>"left-hand-index-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-index-metacarpal"><code><c- s>"left-hand-index-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-index-phalanx-proximal"><code><c- s>"left-hand-index-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-index-phalanx-intermediate"><code><c- s>"left-hand-index-phalanx-intermediate"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-index-phalanx-distal"><code><c- s>"left-hand-index-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-left-hand-index-tip"><code><c- s>"left-hand-index-tip"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-middle-carpal"><code><c- s>"left-hand-middle-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-middle-proximal"><code><c- s>"left-hand-middle-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-middle-intermediate"><code><c- s>"left-hand-middle-intermediate"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-middle-distal"><code><c- s>"left-hand-middle-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-middle-phalanx-metacarpal"><code><c- s>"left-hand-middle-phalanx-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-middle-phalanx-proximal"><code><c- s>"left-hand-middle-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-middle-phalanx-intermediate"><code><c- s>"left-hand-middle-phalanx-intermediate"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-middle-phalanx-distal"><code><c- s>"left-hand-middle-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-left-hand-middle-tip"><code><c- s>"left-hand-middle-tip"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-ring-carpal"><code><c- s>"left-hand-ring-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-ring-proximal"><code><c- s>"left-hand-ring-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-ring-intermediate"><code><c- s>"left-hand-ring-intermediate"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-ring-distal"><code><c- s>"left-hand-ring-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-ring-metacarpal"><code><c- s>"left-hand-ring-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-ring-phalanx-proximal"><code><c- s>"left-hand-ring-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-ring-phalanx-intermediate"><code><c- s>"left-hand-ring-phalanx-intermediate"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-ring-phalanx-distal"><code><c- s>"left-hand-ring-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-left-hand-ring-tip"><code><c- s>"left-hand-ring-tip"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-little-carpal"><code><c- s>"left-hand-little-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-little-proximal"><code><c- s>"left-hand-little-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-little-intermediate"><code><c- s>"left-hand-little-intermediate"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-left-hand-little-distal"><code><c- s>"left-hand-little-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-little-metacarpal"><code><c- s>"left-hand-little-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-little-phalanx-proximal"><code><c- s>"left-hand-little-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-little-phalanx-intermediate"><code><c- s>"left-hand-little-phalanx-intermediate"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-left-hand-little-phalanx-distal"><code><c- s>"left-hand-little-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-left-hand-little-tip"><code><c- s>"left-hand-little-tip"</c-></code></a>,
   <a href="#dom-xrbodyjoint-right-hand-palm"><code><c- s>"right-hand-palm"</c-></code></a>,
   <a href="#dom-xrbodyjoint-right-hand-wrist"><code><c- s>"right-hand-wrist"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-thumb-carpal"><code><c- s>"right-hand-thumb-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-thumb-proximal"><code><c- s>"right-hand-thumb-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-thumb-distal"><code><c- s>"right-hand-thumb-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-thumb-metacarpal"><code><c- s>"right-hand-thumb-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-thumb-phalanx-proximal"><code><c- s>"right-hand-thumb-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-thumb-phalanx-distal"><code><c- s>"right-hand-thumb-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-right-hand-thumb-tip"><code><c- s>"right-hand-thumb-tip"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-index-carpal"><code><c- s>"right-hand-index-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-index-proximal"><code><c- s>"right-hand-index-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-index-intermediate"><code><c- s>"right-hand-index-intermediate"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-index-distal"><code><c- s>"right-hand-index-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-index-metacarpal"><code><c- s>"right-hand-index-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-index-phalanx-proximal"><code><c- s>"right-hand-index-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-index-phalanx-intermediate"><code><c- s>"right-hand-index-phalanx-intermediate"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-index-phalanx-distal"><code><c- s>"right-hand-index-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-right-hand-index-tip"><code><c- s>"right-hand-index-tip"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-middle-carpal"><code><c- s>"right-hand-middle-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-middle-proximal"><code><c- s>"right-hand-middle-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-middle-intermediate"><code><c- s>"right-hand-middle-intermediate"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-middle-distal"><code><c- s>"right-hand-middle-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-middle-metacarpal"><code><c- s>"right-hand-middle-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-middle-phalanx-proximal"><code><c- s>"right-hand-middle-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-middle-phalanx-intermediate"><code><c- s>"right-hand-middle-phalanx-intermediate"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-middle-phalanx-distal"><code><c- s>"right-hand-middle-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-right-hand-middle-tip"><code><c- s>"right-hand-middle-tip"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-ring-carpal"><code><c- s>"right-hand-ring-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-ring-proximal"><code><c- s>"right-hand-ring-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-ring-intermediate"><code><c- s>"right-hand-ring-intermediate"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-ring-distal"><code><c- s>"right-hand-ring-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-ring-metacarpal"><code><c- s>"right-hand-ring-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-ring-phalanx-proximal"><code><c- s>"right-hand-ring-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-ring-phalanx-intermediate"><code><c- s>"right-hand-ring-phalanx-intermediate"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-ring-phalanx-distal"><code><c- s>"right-hand-ring-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-right-hand-ring-tip"><code><c- s>"right-hand-ring-tip"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-little-carpal"><code><c- s>"right-hand-little-carpal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-little-proximal"><code><c- s>"right-hand-little-proximal"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-little-intermediate"><code><c- s>"right-hand-little-intermediate"</c-></code></a>,
-  <a href="#dom-xrbodyjoint-right-hand-little-distal"><code><c- s>"right-hand-little-distal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-little-metacarpal"><code><c- s>"right-hand-little-metacarpal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-little-phalanx-proximal"><code><c- s>"right-hand-little-phalanx-proximal"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-little-phalanx-intermediate"><code><c- s>"right-hand-little-phalanx-intermediate"</c-></code></a>,
+  <a href="#dom-xrbodyjoint-right-hand-little-phalanx-distal"><code><c- s>"right-hand-little-phalanx-distal"</c-></code></a>,
   <a href="#dom-xrbodyjoint-right-hand-little-tip"><code><c- s>"right-hand-little-tip"</c-></code></a>,
   <a href="#dom-xrbodyjoint-left-upper-leg"><code><c- s>"left-upper-leg"</c-></code></a>,
   <a href="#dom-xrbodyjoint-left-lower-leg"><code><c- s>"left-lower-leg"</c-></code></a>,
@@ -1613,9 +1615,13 @@ window.dfnpanelData['4da8c16e'] = {"dfnID": "4da8c16e", "url": "https://immersiv
 window.dfnpanelData['ac906c0c'] = {"dfnID": "ac906c0c", "url": "https://immersive-web.github.io/webxr-ar-module/#dom-xrsessionmode-immersive-ar", "dfnText": "\"immersive-ar\"", "refSections": [{"refs": [{"id": "ref-for-dom-xrsessionmode-immersive-ar"}], "title": "3. Privacy & Security Considerations"}], "external": true};
 window.dfnpanelData['feature-descriptor-body-tracking'] = {"dfnID": "feature-descriptor-body-tracking", "url": "#feature-descriptor-body-tracking", "dfnText": "body-tracking", "refSections": [{"refs": [{"id": "ref-for-feature-descriptor-body-tracking"}], "title": "2. Initialization"}, {"refs": [{"id": "ref-for-feature-descriptor-body-tracking\u2460"}], "title": "2.1. XRFrame"}], "external": false};
 window.dfnpanelData['dom-xrframe-body'] = {"dfnID": "dom-xrframe-body", "url": "#dom-xrframe-body", "dfnText": "body", "refSections": [{"refs": [{"id": "ref-for-dom-xrframe-body"}, {"id": "ref-for-dom-xrframe-body\u2460"}, {"id": "ref-for-dom-xrframe-body\u2461"}], "title": "2.1. XRFrame"}, {"refs": [{"id": "ref-for-dom-xrframe-body\u2462"}], "title": "2.2. Body Joints"}], "external": false};
-window.dfnpanelData['body-joints'] = {"dfnID": "body-joints", "url": "#body-joints", "dfnText": "body joints", "refSections": [{"refs": [{"id": "ref-for-body-joints"}], "title": "1. Introduction"}, {"refs": [{"id": "ref-for-body-joints\u2460"}, {"id": "ref-for-body-joints\u2461"}, {"id": "ref-for-body-joints\u2462"}], "title": "2.2. Body Joints"}, {"refs": [{"id": "ref-for-body-joints\u2463"}, {"id": "ref-for-body-joints\u2464"}], "title": "2.3. XRBody"}, {"refs": [{"id": "ref-for-body-joints\u2465"}, {"id": "ref-for-body-joints\u2466"}, {"id": "ref-for-body-joints\u2467"}], "title": "2.4. XRBodySpace"}], "external": false};
+window.dfnpanelData['body-joints'] = {"dfnID": "body-joints", "url": "#body-joints", "dfnText": "body joints", "refSections": [{"refs": [{"id": "ref-for-body-joints"}], "title": "1. Introduction"}, {"refs": [{"id": "ref-for-body-joints\u2460"}, {"id": "ref-for-body-joints\u2461"}, {"id": "ref-for-body-joints\u2462"}], "title": "2.2. Body Joints"}, {"refs": [{"id": "ref-for-body-joints\u2463"}, {"id": "ref-for-body-joints\u2464"}], "title": "2.3. XRBody"}, {"refs": [{"id": "ref-for-body-joints\u2465"}, {"id": "ref-for-body-joints\u2466"}, {"id": "ref-for-body-joints\u2467"}, {"id": "ref-for-body-joints\u2468"}], "title": "2.4. XRBodySpace"}], "external": false};
 window.dfnpanelData['associated-bone'] = {"dfnID": "associated-bone", "url": "#associated-bone", "dfnText": "associated bone", "refSections": [{"refs": [{"id": "ref-for-associated-bone"}, {"id": "ref-for-associated-bone\u2460"}], "title": "2.2. Body Joints"}, {"refs": [{"id": "ref-for-associated-bone\u2461"}], "title": "2.4. XRBodySpace"}], "external": false};
 window.dfnpanelData['enumdef-xrbodyjoint'] = {"dfnID": "enumdef-xrbodyjoint", "url": "#enumdef-xrbodyjoint", "dfnText": "XRBodyJoint", "refSections": [{"refs": [{"id": "ref-for-enumdef-xrbodyjoint"}], "title": "2.2. Body Joints"}, {"refs": [{"id": "ref-for-enumdef-xrbodyjoint\u2460"}, {"id": "ref-for-enumdef-xrbodyjoint\u2461"}, {"id": "ref-for-enumdef-xrbodyjoint\u2462"}, {"id": "ref-for-enumdef-xrbodyjoint\u2463"}, {"id": "ref-for-enumdef-xrbodyjoint\u2464"}, {"id": "ref-for-enumdef-xrbodyjoint\u2465"}, {"id": "ref-for-enumdef-xrbodyjoint\u2466"}, {"id": "ref-for-enumdef-xrbodyjoint\u2467"}], "title": "2.3. XRBody"}, {"refs": [{"id": "ref-for-enumdef-xrbodyjoint\u2468"}], "title": "2.4. XRBodySpace"}], "external": false};
+window.dfnpanelData['dom-xrbodyjoint-left-hand-palm'] = {"dfnID": "dom-xrbodyjoint-left-hand-palm", "url": "#dom-xrbodyjoint-left-hand-palm", "dfnText": "\"left-hand-palm\"", "refSections": [{"refs": [{"id": "ref-for-dom-xrbodyjoint-left-hand-palm"}], "title": "2.4. XRBodySpace"}], "external": false};
+window.dfnpanelData['dom-xrbodyjoint-left-hand-wrist'] = {"dfnID": "dom-xrbodyjoint-left-hand-wrist", "url": "#dom-xrbodyjoint-left-hand-wrist", "dfnText": "\"left-hand-wrist\"", "refSections": [{"refs": [{"id": "ref-for-dom-xrbodyjoint-left-hand-wrist"}], "title": "2.4. XRBodySpace"}], "external": false};
+window.dfnpanelData['dom-xrbodyjoint-right-hand-palm'] = {"dfnID": "dom-xrbodyjoint-right-hand-palm", "url": "#dom-xrbodyjoint-right-hand-palm", "dfnText": "\"right-hand-palm\"", "refSections": [{"refs": [{"id": "ref-for-dom-xrbodyjoint-right-hand-palm"}], "title": "2.4. XRBodySpace"}], "external": false};
+window.dfnpanelData['dom-xrbodyjoint-right-hand-wrist'] = {"dfnID": "dom-xrbodyjoint-right-hand-wrist", "url": "#dom-xrbodyjoint-right-hand-wrist", "dfnText": "\"right-hand-wrist\"", "refSections": [{"refs": [{"id": "ref-for-dom-xrbodyjoint-right-hand-wrist"}], "title": "2.4. XRBodySpace"}], "external": false};
 window.dfnpanelData['xrbody'] = {"dfnID": "xrbody", "url": "#xrbody", "dfnText": "XRBody", "refSections": [{"refs": [{"id": "ref-for-xrbody"}, {"id": "ref-for-xrbody\u2460"}], "title": "2.1. XRFrame"}, {"refs": [{"id": "ref-for-xrbody\u2461"}, {"id": "ref-for-xrbody\u2462"}, {"id": "ref-for-xrbody\u2463"}, {"id": "ref-for-xrbody\u2464"}], "title": "2.3. XRBody"}, {"refs": [{"id": "ref-for-xrbody\u2465"}], "title": "2.4. XRBodySpace"}], "external": false};
 window.dfnpanelData['dom-xrbody-joints-slot'] = {"dfnID": "dom-xrbody-joints-slot", "url": "#dom-xrbody-joints-slot", "dfnText": "[[joints]]", "refSections": [{"refs": [{"id": "ref-for-dom-xrbody-joints-slot"}, {"id": "ref-for-dom-xrbody-joints-slot\u2460"}, {"id": "ref-for-dom-xrbody-joints-slot\u2461"}], "title": "2.3. XRBody"}], "external": false};
 window.dfnpanelData['dom-xrbody-size'] = {"dfnID": "dom-xrbody-size", "url": "#dom-xrbody-size", "dfnText": "size", "refSections": [{"refs": [{"id": "ref-for-dom-xrbody-size"}], "title": "2.3. XRBody"}], "external": false};
